@@ -16,6 +16,7 @@ import django_heroku
 import corsheaders
 import dj_database_url
 from decouple import config
+from corsheaders.defaults import default_methods
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -59,6 +60,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    "https://whoami-rashed.vercel.app/",
+    "https://sub.example.com",
+    "http://localhost:8080",
+    "http://127.0.0.1:9000"
+]
 
 ROOT_URLCONF = 'portfolioApi.urls'
 
