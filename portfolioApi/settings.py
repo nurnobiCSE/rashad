@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     #'rest_framework',
     'Api',
     'rest_framework'
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'portfolioApi.urls'
 
