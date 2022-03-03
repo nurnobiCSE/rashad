@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 #importing for heroku app
+from pickle import PUT
+
 import django_heroku
 
 import dj_database_url
@@ -60,6 +62,10 @@ MIDDLEWARE = [
 
 ]
 CORS_ALLOW_ALL_ORIGINS: True
+CORS_ALLOWED_ORIGINS = [
+    "https://whoami-rashed.vercel.app/",
+]
+
 CORS_ALLOW_METHODS = [
     "DELETE",
     "GET",
