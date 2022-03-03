@@ -63,7 +63,9 @@ MIDDLEWARE = [
 ]
 CORS_ALLOW_ALL_ORIGINS: True
 CORS_ALLOWED_ORIGINS = [
-    "https://whoami-rashed.vercel.app/",
+    "http://getapisource.herokuapp.com/",
+    "http://getapisource.herokuapp.com/skils-api/",
+    "http://getapisource.herokuapp.com/project-model-api/",
 ]
 
 CORS_ALLOW_METHODS = [
